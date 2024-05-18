@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #controls{
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+        }
+        #controls>button{
+            padding: 10px;
+        }
+        canvas{
+            background: blue;
+            position: relative;
+            left: 50%;
+            translate:  -50% 0;
+            width: 320px;
+            height: 320px;
+            image-rendering: crisp-edges;
+            image-rendering: pixelated;
+        }
+
+        #tilemap{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="controls">
+
+        <button id="level1button">Level 1</button>
+        <button id="level2button">Level 2</button>
+        <button id="level3button">Level 3</button>
+        <button id="debugbutton">Debug</button>
+    </div>
+    <canvas id="canvas1"></canvas>
+    <img src="tilemap.png" id="titlemap" alt="defs">
+    <script src="script.js"></script>
+</body>
+</html>
